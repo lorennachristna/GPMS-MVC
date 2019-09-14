@@ -1,0 +1,42 @@
+﻿@model Sustent.Models.Bicho
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Bicho</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.especie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.especie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descricao)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
